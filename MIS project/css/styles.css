@@ -1,0 +1,494 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #33363B;
+  background-color: #EAEAEA;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.navbar,
+.header,
+.services,
+.our-team,
+.testimonials,
+.our-projects,
+.footer {
+  min-width: 1200px;
+}
+
+ul {
+  list-style: none;
+}
+
+h2,
+h3,
+h4 {
+  font-weight: normal;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.special-heading {
+  position: relative;
+}
+.special-heading:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 40px;
+  border-bottom: 3px solid #33363B;
+}
+
+.separator {
+  border: 1px solid #d1d1d1;
+}
+
+.fl-left {
+  float: left;
+}
+
+.navbar {
+  font-size: 18px;
+  height: 0;
+  color: #EAEAEA;
+  position: relative;
+  z-index: 2;
+}
+.navbar .brand {
+  float: left;
+  width: 50%;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.navbar .brand span {
+  color: #368CBF;
+}
+.navbar .links {
+  float: left;
+  width: 50%;
+  margin-top: 25px;
+}
+.navbar .links li {
+  display: inline-block;
+  padding: 10px 0;
+  margin: 0 10px;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+}
+.navbar .links li.active, .navbar .links li:hover {
+  color: #368CBF;
+  border-bottom-color: #368CBF;
+}
+.navbar .links li.active a, .navbar .links li:hover a {
+  color: #368CBF;
+  border-bottom-color: #368CBF;
+}
+.navbar .links li a {
+  color: #EAEAEA;
+  text-decoration: none;
+}
+
+.header {
+  background: url("../images/header.jpg");
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+}
+.header .overlay {
+  background-color: rgba(51, 54, 59, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  color: #EAEAEA;
+  z-index: 1;
+}
+.header .bx-wrapper {
+  height: 100%;
+}
+.header .bx-wrapper .bx-viewport {
+  box-shadow: none;
+  border: 0;
+  background: none;
+  height: 100% !important;
+  text-align: center;
+}
+.header .bxslider {
+  height: 100%;
+}
+.header .bxslider li {
+  display: block;
+}
+.header .bxslider li h2 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  font-weight: bold;
+}
+.header .bxslider li h2 span {
+  text-transform: uppercase;
+  color: #368CBF;
+}
+
+.services {
+  padding: 80px 20px 40px;
+}
+.services h2 {
+  margin: 0 0 50px;
+}
+.services .item {
+  float: left;
+  width: 50%;
+  margin-bottom: 20px;
+}
+.services .item i {
+  float: left;
+  width: 17%;
+  margin-top: 20px;
+  margin-right: 2%;
+  color: #368CBF;
+}
+.services .item .info {
+  float: left;
+  width: 70%;
+}
+.services .item .info h3 {
+  margin-bottom: 10px;
+  color: #4f545c;
+}
+.services .item .info p {
+  margin-top: 0;
+  color: #7b818c;
+}
+
+.testimonials {
+  background: url("../images/test.jpg");
+  height: 400px;
+  background-size: cover;
+  background-position: 50% 55%;
+  position: relative;
+  text-align: center;
+  padding: 80px 0;
+}
+.testimonials .t-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  color: #EAEAEA;
+  background-color: rgba(51, 54, 59, 0.7);
+}
+.testimonials h2 {
+  font-size: 40px;
+  margin: 80px 0 10px;
+}
+.testimonials q {
+  font-size: 20px;
+  line-height: 2;
+  color: #dddddd;
+  display: block;
+  margin: 60px 0 30px;
+}
+.testimonials span {
+  display: block;
+  font-size: 30px;
+  color: #368CBF;
+}
+.testimonials .slider > div {
+  display: none;
+}
+.testimonials .slider .active {
+  display: block;
+}
+
+.our-projects {
+  padding: 60px 0;
+}
+.our-projects ul {
+  margin-top: 50px;
+}
+.our-projects ul li {
+  display: inline-block;
+  border: 2px solid #9e9e9e;
+  color: #9e9e9e;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.our-projects ul li.selected {
+  background-color: #368CBF;
+  color: #EAEAEA;
+  border: 2px solid #368CBF;
+}
+.our-projects .gallery {
+  margin-top: 50px;
+  overflow: hidden;
+}
+.our-projects .gallery .row > div {
+  width: 31.6666%;
+  float: left;
+  margin-bottom: 12px;
+  position: relative;
+  overflow: hidden;
+  height: 265px;
+}
+.our-projects .gallery .row > div .over {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 232px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #EAEAEA;
+  background-color: rgba(54, 140, 191, 0.7);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+.our-projects .gallery .row > div .heart {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: #EAEAEA;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+.our-projects .gallery .row > div:hover .over,
+.our-projects .gallery .row > div:hover .heart {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s linear;
+}
+.our-projects .gallery .row > div img {
+  max-width: 100%;
+  min-height: 100%;
+}
+.our-projects .gallery .row div {
+  margin-right: .5%;
+  margin-left: .5%;
+}
+.our-projects .mix {
+  display: none;
+}
+
+.footer {
+  overflow: hidden;
+  padding: 20px 0;
+  color: #848484;
+  background-color: #33363B;
+}
+.footer ul {
+  float: right;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.footer ul li {
+  display: inline-block;
+  transition: all ease-in-out .5s;
+  cursor: pointer;
+}
+.footer ul li:hover {
+  color: #EAEAEA;
+}
+
+/* Start Header */
+.head .nav {
+  background-color: #33363B;
+  color: #EAEAEA;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.head .nav h2 {
+  color: #EAEAEA;
+  text-transform: uppercase;
+}
+.head .nav h2 span {
+  color: #368CBF;
+}
+.head .nav ul {
+  list-style: none;
+  padding-left: 0;
+  overflow: hidden;
+  float: right;
+}
+.head .nav ul li {
+  float: left;
+  padding: 7px;
+}
+.head .nav ul li a {
+  color: #EAEAEA;
+  text-decoration: none;
+}
+.head .nav ul li.active a,
+.head .nav ul li a:hover {
+  color: #368CBF;
+}
+
+/* End Header */
+/* Start product */
+.product {
+  overflow: hidden;
+}
+.product .image {
+  width: 40%;
+}
+.product .image img {
+  width: 100%;
+}
+.product .info {
+  width: 60%;
+}
+.product .info h2 {
+  margin: 25px 0 20px 40px;
+}
+.product .info > p {
+  margin: 0 0 10px 40px;
+}
+.product .info > p:last-of-type {
+  margin-top: 25px;
+}
+.product .specs {
+  overflow: hidden;
+  margin: 15px 0 0 40px;
+}
+.product .specs .content {
+  width: 50%;
+  overflow: hidden;
+}
+.product .specs .content .icon {
+  width: 12%;
+  margin-right: 5%;
+}
+.product .specs .content .icon i {
+  margin-top: 30px;
+  color: #368CBF;
+}
+.product .specs .content .icon img {
+  max-width: 100%;
+  margin-top: 55%;
+}
+.product .specs .content .text {
+  width: 83%;
+}
+.product .specs .content .text p {
+  margin-top: 0;
+}
+.product .specs .content .text h3 {
+  margin-bottom: 5px;
+}
+
+/* End product */
+.form h1 {
+  text-align: center;
+}
+.form form {
+  margin: 0 auto;
+  width: 800px;
+}
+.form form hr {
+  margin-bottom: 50px;
+  border-bottom: 1px solid #EAEAEA;
+}
+.form form .group {
+  margin: 20px 0;
+}
+.form form .label {
+  font-size: 18px;
+  width: 170px;
+  display: inline-block;
+}
+.form form input[type=text],
+.form form input[type=password] {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1PX solid #b1b5bc;
+  width: 350px;
+  margin-right: 25px;
+}
+.form form input[type=text]:active, .form form input[type=text]:focus,
+.form form input[type=password]:active,
+.form form input[type=password]:focus {
+  border-color: #368CBF;
+  box-shadow: #b1b5bc 2px 2px 3px;
+}
+.form form input[type=submit] {
+  background-color: #368CBF;
+  color: #EAEAEA;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  top: -25px;
+  box-shadow: #33363B 3px 3px 5px;
+  transition: all .25s linear;
+}
+.form form input[type=submit]:hover {
+  background: #307dab;
+  color: white;
+}
+.form form input[type=submit]:active {
+  background: #2b6f97;
+  box-shadow: none;
+  color: white;
+}
+.form form .error,
+.form form .response {
+  color: #d9534f;
+}
+
+.users h1 {
+  text-align: center;
+}
+.users table {
+  width: 100%;
+}
+.users table tr:nth-child(1) {
+  border: 1px solid #33363B;
+  background: #368CBF;
+}
+.users table td {
+  border-bottom: 1px solid #b1b5bc;
+}
+.users table th,
+.users table td {
+  padding: 10px 0;
+  text-align: center;
+  width: 25%;
+}
+.users table tr {
+  transition: all .5s linear;
+}
+.users table tr:nth-child(even) {
+  background: #dddddd;
+}
+.users table tr:hover {
+  background: #c4c4c4;
+}
+
+/*# sourceMappingURL=styles.css.map */

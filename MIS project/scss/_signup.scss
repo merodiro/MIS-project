@@ -1,0 +1,62 @@
+.form {
+    h1 {
+        text-align: center;
+    }
+    form {
+        margin: 0 auto;
+        width: 800px;
+        hr {
+            margin-bottom: 50px;
+            border-bottom:1px solid $light-color;
+        }
+        .group {
+            margin:20px 0;
+        }
+        .label {
+            font-size:18px;
+            width:170px;
+            display:inline-block;
+        }
+        input[type=text],
+        input[type=password] {
+            padding:10px;
+            border-radius:10px;
+            border: 1PX solid lighten($dark-color,50%);
+            width:350px;
+            margin-right:25px;
+            &:active, 
+            &:focus {
+                border-color: $main-color;
+                box-shadow: lighten($dark-color, 50%) 2px 2px 3px;
+            }
+        }
+        input[type=submit]{
+            background-color:$main-color;
+            color: $light-color;
+            padding: 8px;
+            border: none;
+            border-radius:5px;
+            position:relative;
+            top:-25px;
+            box-shadow: $dark-color 3px 3px 5px;
+            transition:all .25s linear;
+            &:hover{
+                background:darken($main-color, 5%);
+                color:lighten($light-color, 10%);
+            }
+            &:active{
+                background:darken($main-color, 10%);
+                box-shadow:none;
+                color:lighten($light-color, 25%);
+            }
+        }
+        .error,
+        .response
+        {
+            color:#d9534f;
+        }
+        .response {
+            // color: #5cb85c
+        }
+    }
+}

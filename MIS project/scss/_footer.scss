@@ -1,0 +1,21 @@
+.footer {
+    overflow: hidden;
+    padding: 20px 0;
+    color: darken($light-color, 40%);
+    background-color: $dark-color;
+    ul {
+        float: right;
+        margin: 0;
+        padding-left: 0;
+        list-style: none;
+        li {
+            display: inline-block;
+            transition:all ease-in-out .5s;
+            cursor:pointer;
+            &:hover {
+                color: $light-color;
+            }
+        }
+    }
+}
+
